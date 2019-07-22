@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>HTML+JS</title>
+  </head>
+  <body>
+    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    <div class="button-container">
+      <button
+        onclick="window.location.href='./pages/cholesterols/cholesterols.html';"
+      >
+        Cholesterol
+      </button>
+      <button
+        onclick="window.location.href='./pages/apolipoproteins/apolipoproteins.html';"
+      >
+        Apolipoproteins
+      </button>
+      <button
+        onclick="window.location.href='./pages/fattyacids/fattyacids.html';"
+      >
+        Fatty Acids
+      </button>
+    </div>
+    <div class="hints">
+      <div class="hint">Click and Drag Chart to Zoom</div>
+      <span class="hint"
+        >Use the top right icons after Zooming to Pan and Reset</span
+      >
+      <span class="hint">
+        <button
+          class="full-spectrum"
+          onclick="window.location.href='index.html';"
+        >
+          Full Spectrum
+        </button>
+      </span>
+      <a class="hint" href="http://localhost:3000">
+        Full React Version
+      </a>
+    </div>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

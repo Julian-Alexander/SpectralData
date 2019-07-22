@@ -1,0 +1,79 @@
+html,
+body {
+  display: grid;
+  height: 100vh;
+  font-size: 16px;
+  margin: 0;
+  place-items: center;
+}
+
+.button-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(59, 52, 100);
+  padding: 11px 0px;
+}
+
+button {
+  background-color: rgb(59, 52, 100);
+  color: white;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 0;
+}
+
+button:active {
+  text-decoration: underline;
+  cursor: pointer;
+}
+button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hints {
+  padding: 14px 14rem 0 14rem;
+}
+
+.hint {
+  display: flex;
+  justify-content: center;
+  padding: 22px 0 0 0;
+  font-size: 1rem;
+}
+
+.full-spectrum {
+  background-color: rgb(59, 52, 100);
+  color: white;
+  font-size: 0.7rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 11;
+  padding: 7px;
+  border-radius: 44%;
+}
+
+.full-spectrum:active {
+  background-color: rgb(18, 2, 56);
+  cursor: pointer;
+}
+.full-spectrum:hover {
+  background-color: rgb(18, 2, 56);
+  cursor: pointer;
+}
+
+@media all and (max-width: 420px) {
+  .hints {
+    padding: 0 1rem 0 1rem;
+  }
+}
+
+@media all and (max-width: 330px) {
+  .hints {
+    padding: 0;
+  }
+  .hint {
+    padding: 0;
+  }
+}
